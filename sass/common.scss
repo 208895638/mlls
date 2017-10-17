@@ -23,6 +23,7 @@
         .adv{
             width: 301px;
             height: 54px;
+            cursor: pointer;
             li{
                 img{
                     width: 301px;
@@ -42,7 +43,7 @@
                 img{
                     width: 940px;
                 }
-                z-index:99;
+                z-index:100;
             }
         }
         .navMain{

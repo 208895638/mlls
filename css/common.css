@@ -21,7 +21,8 @@
         height: 34px; }
     .commonNav .content .adv {
       width: 301px;
-      height: 54px; }
+      height: 54px;
+      cursor: pointer; }
       .commonNav .content .adv li img {
         width: 301px; }
       .commonNav .content .adv .advSmall img {
@@ -32,7 +33,7 @@
         height: 189px;
         left: 0;
         top: 54px;
-        z-index: 99; }
+        z-index: 100; }
         .commonNav .content .adv .advBig img {
           width: 940px; }
     .commonNav .content .navMain {

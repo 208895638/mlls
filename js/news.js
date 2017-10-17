@@ -6,24 +6,26 @@ $(function(){
 		bindEvent:function(){
 			//广告位
 			$(".adv").hover(function(){
+				$(".advSmall").hide();
 				$(".advBig").stop(true, true).slideDown();
 			},function(){
+				$(".advSmall").show();
 				$(".advBig").stop(true, true).slideUp();
 			});
 			//全部的游戏
 			$(".xPGames").hover(function(){
-				$(".games").stop(true, true).slideDown();
+				$(".xPGames .games").stop(true, true).slideDown();
 			},function(){
-				$(".games").stop(true, true).slideUp();
+				$(".xPGames .games").stop(true, true).slideUp();
 			});
 			//划过游戏名称显示对应的图片
 			$(".xPGames .games .list1 li a").hover(function(){
-				$(".xPGames .games .list1 li").find(".gameText").show().siblings().hide();
-				$(this).find(".gamePhoto").show().siblings().hide();
+				$(".xPGames .games .list1 li").not(".show").find(".gameText").show().siblings().hide();
+				$(this).not(".show").find(".gamePhoto").show().siblings().hide();
 			});
 			$(".xPGames .games .list2 li a").hover(function(){
-				$(".xPGames .games .list2 li").find(".gameText").show().siblings().hide();
-				$(this).find(".gamePhoto").show().siblings().hide();
+				$(".xPGames .games .list2 li").not(".show").find(".gameText").show().siblings().hide();
+				$(this).not(".show").find(".gamePhoto").show().siblings().hide();
 			});
 			//顶部导航栏划过微信图标显示二维码
 			$(".mLNav .wx").hover(function(){

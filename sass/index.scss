@@ -403,6 +403,33 @@ body,html{
                 }
             }
         }
+        .btns{
+            .btn{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 42px;
+                height: 84px;
+                cursor: pointer;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    width: 20px;
+                    height: 40px;
+                    border:22px solid #d2d2d2;
+                    transform: rotateZ(45deg);
+                }
+            }
+            .btnPrev{
+                left: 0;
+            }
+            .btnNext{
+                right: 0;
+            }
+        }
         .career{
             position: absolute;
             left:152px;
@@ -423,7 +450,7 @@ body,html{
                 background: url(../images/sec_huizhanglv_41.png) no-repeat center;
             }
             .green:hover{
-                background: url(../weiguanwangimages/images/sec_huizhanglv1_41.png) no-repeat center;
+                background: url(../images/sec_huizhanglv1_41.png) no-repeat center;
             }
             .red{
                 background: url(../images/sec_huizhanghong_41.png) no-repeat center;
@@ -473,7 +500,9 @@ body,html{
                 cursor: pointer;
                 h3{
                     width: 100px;
-                    height:733px ;
+                    height:513px ;
+                    background:rgba(17,89,83,0.6);
+                    padding-top: 220px;
                     span,em{
                         display: block;
                     }
@@ -485,6 +514,7 @@ body,html{
                         text-align: center;
                     }
                     em{
+                        
                         height: 513px;
                         img{
                             height: 513px;

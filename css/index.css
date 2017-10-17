@@ -307,6 +307,26 @@ body, html {
           height: 992px; }
           .introduce .box .xq .per .role img {
             width: 100%; }
+    .introduce .box .btns .btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 42px;
+      height: 84px;
+      cursor: pointer;
+      overflow: hidden; }
+      .introduce .box .btns .btn img {
+        width: 100%; }
+      .introduce .box .btns .btn h3 {
+        width: 20px;
+        height: 40px;
+        border: 22px solid #d2d2d2;
+        transform: rotateZ(45deg); }
+    .introduce .box .btns .btnPrev {
+      left: 0; }
+    .introduce .box .btns .btnNext {
+      right: 0; }
     .introduce .box .career {
       position: absolute;
       left: 152px;
@@ -325,7 +345,7 @@ body, html {
       .introduce .box .career .green {
         background: url(../images/sec_huizhanglv_41.png) no-repeat center; }
       .introduce .box .career .green:hover {
-        background: url(../weiguanwangimages/images/sec_huizhanglv1_41.png) no-repeat center; }
+        background: url(../images/sec_huizhanglv1_41.png) no-repeat center; }
       .introduce .box .career .red {
         background: url(../images/sec_huizhanghong_41.png) no-repeat center; }
       .introduce .box .career .red:hover {
@@ -364,7 +384,9 @@ body, html {
         cursor: pointer; }
         .game .box .games li h3 {
           width: 100px;
-          height: 733px; }
+          height: 513px;
+          background: rgba(17, 89, 83, 0.6);
+          padding-top: 220px; }
           .game .box .games li h3 span, .game .box .games li h3 em {
             display: block; }
           .game .box .games li h3 span {

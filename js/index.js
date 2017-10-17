@@ -5,27 +5,40 @@ $(function(){
 			this.swiper();
 		},
 		bindEvent:function(){
-			
-			//广告位
+			var k = 0;//记录职业介绍是第几个职业
+			//公共导航栏广告位
 			$(".adv").hover(function(){
+				$(".advSmall").hide();
 				$(".advBig").stop(true, true).slideDown();
 			},function(){
+				$(".advSmall").show();
 				$(".advBig").stop(true, true).slideUp();
 			});
-			//全部的游戏
+			//划过喜扑游戏全目录切换效果
 			$(".xPGames").hover(function(){
 				$(".xPGames .games").stop(true, true).slideDown();
 			},function(){
 				$(".xPGames .games").stop(true, true).slideUp();
 			});
-			//划过游戏名称显示对应的图片
+			//公共导航栏划过游戏名称显示对应的图片
 			$(".xPGames .games .list1 li a").hover(function(){
-				$(".xPGames .games .list1 li").find(".gameText").show().siblings().hide();
-				$(this).find(".gamePhoto").show().siblings().hide();
+				$(".xPGames .games .list1 li").not(".show").find(".gameText").show().siblings().hide();
+				$(this).not(".show").find(".gamePhoto").show().siblings().hide();
 			});
 			$(".xPGames .games .list2 li a").hover(function(){
-				$(".xPGames .games .list2 li").find(".gameText").show().siblings().hide();
-				$(this).find(".gamePhoto").show().siblings().hide();
+				$(".xPGames .games .list2 li").not(".show").find(".gameText").show().siblings().hide();
+				$(this).not(".show").find(".gamePhoto").show().siblings().hide();
+			});
+			//魔龙猎手导航栏的游戏资料和有些特色划过切换到对应的位置
+			$(".nav li").on("click",function(){
+				var i = $(this).index();
+				if(i == 2){
+					var h = $(".introduce").offset().top;
+					$('body,html').animate({scrollTop:h},500);
+				}else if(i == 3){
+					var h = $(".game").offset().top;
+					$('body,html').animate({scrollTop:h},500);
+				}
 			});
 			//顶部导航栏划过微信图标显示二维码
 			$(".mLNav .wx").hover(function(){
@@ -42,8 +55,9 @@ $(function(){
 			
 			//职业介绍中的职业切换
 			//初始状态
-			$(".green").css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+			$(".purple").css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
 			$(".career li").on("click",function(){
+				k = $(this).index();
 				//重置每个按钮的初始状态
 				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
 				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
@@ -52,11 +66,11 @@ $(function(){
 				var i = $(this).index();
 				//每个按钮对应点击之后的状态
 				switch (i){
-					case 0:$(this).css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					case 2:$(this).css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
 						break;
 					case 1:$(this).css({"background":"url(images/sec_huizhanghong1_41.png) no-repeat center"});
 					break;
-					case 2:$(this).css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+					case 0:$(this).css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
 					break;
 					case 3:$(this).css({"background":"url(images/sec_huizhangcheng1_41.png) no-repeat center"});
 					break;
@@ -64,6 +78,65 @@ $(function(){
 						break;
 				}
 				$(".xq .per").eq(i).show().siblings().hide();
+			})
+			//点击左右按钮切换职业
+			$(".btnNext").on("click",function(){
+				k++;
+				console.log(k);
+				//重置每个按钮初始状态
+				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
+				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
+				$(".purple").css({"background":"url(images/sec_huizhangzi_41.png) no-repeat center"});
+				$(".orange").css({"background":"url(images/sec_huizhangcheng_41.png) no-repeat center"});
+				
+				if(k == 1){
+					//四个小按钮的切换
+					$(".red").css({"background":"url(images/sec_huizhanghong1_41.png) center center no-repeat"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}else if(k == 2){
+					$(".green").css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}else if(k == 3){
+					$(".orange").css({"background":"url(images/sec_huizhangcheng1_41.png) no-repeat center"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}else{
+					k = 0;
+					$(".purple").css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}
+			});
+			$(".btnPrev").on("click",function(){
+				k--;
+				console.log(k);
+				//重置每个按钮初始状态
+				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
+				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
+				$(".purple").css({"background":"url(images/sec_huizhangzi_41.png) no-repeat center"});
+				$(".orange").css({"background":"url(images/sec_huizhangcheng_41.png) no-repeat center"});
+				if(k == 1){
+					//四个小按钮的切换
+					$(".red").css({"background":"url(images/sec_huizhanghong1_41.png) center center no-repeat"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}else if(k == 2){
+					$(".green").css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}else if(k == 0){
+					$(".purple").css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+					
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}else{
+					k = 3;
+					$(".orange").css({"background":"url(images/sec_huizhangcheng1_41.png) no-repeat center"});
+					//职业的切换
+					$(".xq .per").eq(k).show().siblings().hide();
+				}
 			})
 			//职业角色的技能切换
 			$(".skillTop li").on("click",function(){
