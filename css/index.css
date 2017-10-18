@@ -419,7 +419,7 @@ body, html {
 .newsBan {
   width: 100%;
   height: 1481px;
-  background: mediumspringgreen; }
+  background: #082b28; }
   .newsBan .ban {
     width: 100%;
     margin: 0 auto;
@@ -489,9 +489,11 @@ body, html {
               display: inline; }
       .newsBan .info .box .infoR {
         width: 582px;
-        height: 1115px;
         background: #ffffff;
         padding: 36px 108px 0 108px; }
+        .newsBan .info .box .infoR .comTitle {
+          font: 30px/50px "微软雅黑";
+          text-align: center; }
         .newsBan .info .box .infoR .title {
           width: 581px;
           height: 34px;
@@ -521,9 +523,38 @@ body, html {
         .newsBan .info .box .infoR .detailInfo {
           width: 100%; }
           .newsBan .info .box .infoR .detailInfo h3 {
+            text-align: right;
             font: 14px/46px "微软雅黑";
-            color: #9ee5ce;
-            text-align: right; }
+            color: #9ee5ce; }
+            .newsBan .info .box .infoR .detailInfo h3 a {
+              font: 14px/46px "微软雅黑";
+              color: #9ee5ce;
+              text-align: right; }
+          .newsBan .info .box .infoR .detailInfo .container .newsInfoTitle {
+            border-bottom: 1px dashed #b5b5b5;
+            margin-top: 10px; }
+            .newsBan .info .box .infoR .detailInfo .container .newsInfoTitle span {
+              font: 29px/59px "微软雅黑";
+              color: #57a991; }
+            .newsBan .info .box .infoR .detailInfo .container .newsInfoTitle a {
+              font: 19px/59px "微软雅黑";
+              color: #a3abaa; }
+          .newsBan .info .box .infoR .detailInfo .container .time {
+            font: 15px/41px "微软雅黑";
+            color: #57a991;
+            text-align: left;
+            margin-bottom: 20px; }
+          .newsBan .info .box .infoR .detailInfo .container .infos p {
+            font: 18px/41px "微软雅黑";
+            color: #57a991; }
+          .newsBan .info .box .infoR .detailInfo .container .infoBtn {
+            margin-top: 100px;
+            margin-bottom: 50px; }
+            .newsBan .info .box .infoR .detailInfo .container .infoBtn a {
+              font: 18px/30px "微软雅黑";
+              color: #a3abaa; }
+            .newsBan .info .box .infoR .detailInfo .container .infoBtn a:hover {
+              color: #39605c; }
           .newsBan .info .box .infoR .detailInfo .container .news {
             height: 1028px;
             position: relative; }
@@ -536,6 +567,41 @@ body, html {
                 width: 420px; }
               .newsBan .info .box .infoR .detailInfo .container .news .per .par em {
                 text-align: right; }
+              .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlL {
+                width: 420px; }
+                .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlL h3 {
+                  width: 420px;
+                  font: 24px/54px "微软雅黑";
+                  color: #57a991;
+                  text-align: left; }
+                .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlL h4 {
+                  font: 18px/30px "微软雅黑";
+                  color: #999999;
+                  max-height: 60px;
+                  position: relative;
+                  overflow: hidden;
+                  margin-bottom: 14px; }
+                .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlL h4::after {
+                  content: "...";
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  line-height: 30px;
+                  padding-left: 30px;
+                  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+                  background: -o-linear-gradient(right, transparent, #fff 55%);
+                  background: -moz-linear-gradient(right, transparent, #fff 55%);
+                  background: linear-gradient(to right, transparent, #fff 55%); }
+              .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlR {
+                width: 70px;
+                position: relative;
+                height: 128px; }
+                .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlR img {
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  right: 0;
+                  margin: auto; }
             .newsBan .info .box .infoR .detailInfo .container .news .per .par:hover {
               color: red; }
             .newsBan .info .box .infoR .detailInfo .container .news .pages {

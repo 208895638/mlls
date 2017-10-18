@@ -1,5 +1,5 @@
 $(function(){
-	var news={
+	var newsInfo={
 		init:function(){
 			this.bindEvent();
 		},
@@ -58,5 +58,5 @@ $(function(){
 			
 		}
 	};
-	news.init();
+	newsInfo.init();
 })

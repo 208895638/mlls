@@ -32,10 +32,7 @@ $(function(){
 			//魔龙猎手导航栏的游戏资料和有些特色划过切换到对应的位置
 			$(".nav li").on("click",function(){
 				var i = $(this).index();
-				if(i == 2){
-					var h = $(".introduce").offset().top;
-					$('body,html').animate({scrollTop:h},500);
-				}else if(i == 3){
+				if(i == 3){
 					var h = $(".game").offset().top;
 					$('body,html').animate({scrollTop:h},500);
 				}
@@ -82,7 +79,6 @@ $(function(){
 			//点击左右按钮切换职业
 			$(".btnNext").on("click",function(){
 				k++;
-				console.log(k);
 				//重置每个按钮初始状态
 				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
 				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
@@ -111,7 +107,6 @@ $(function(){
 			});
 			$(".btnPrev").on("click",function(){
 				k--;
-				console.log(k);
 				//重置每个按钮初始状态
 				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
 				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
