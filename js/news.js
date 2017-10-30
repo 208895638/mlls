@@ -9,6 +9,7 @@ $(function(){
 				var id =addr[1].split("=")[1]; 
 				$(".navBar li a").removeClass("on");
 				$(".navBar li").eq(id).find("a").addClass("on");
+				$(".container .news").eq(id).removeClass("hide").siblings().addClass("hide");
 			};
 			//广告位
 			$(".adv").hover(function(){
@@ -50,7 +51,8 @@ $(function(){
 				var i = $(this).index();
 				$(this).find("a").addClass("on").parent().siblings().find("a").removeClass("on");
 				$(".container .news").eq(i).removeClass("hide").siblings().addClass("hide");
-			})
+			});
+			
 			
 		},
 		render:function(){

@@ -80,17 +80,52 @@
                     border-bottom: 3px solid #fff;
                 }
                 .games{
-                    width: 350px;
-                    height: 383px;
+                    width: 356px;
                     position: absolute;
                     z-index: 99;
                     top:54px;
                     right: 0;
                     background: #fff;
-                    padding:8px 7px 0 7px;
+                    padding:8px 7px 50px 7px;
+                    h3{
+                        width: 100%;
+                        a{
+                            display: block;
+                            width: 50%;
+                            overflow: hidden;
+                            margin-bottom: 18px;
+                            position: relative;
+                            img{
+                                width: 167px;
+                                height: 93px;
+                                margin:0 auto;
+                            }
+                            span{
+                                position: absolute;
+                                width: 35px;
+                                height: 13px;
+                                border:1px solid #fff;
+                                background: #2e1f25;
+                                font:8px/13px "微软雅黑";
+                                right: 7px;
+                                bottom: 7px;
+                                z-index: 10;
+                                text-align: center;
+                                color: #fff;
+                            }
+                        }
+                    }
                     ul{
                         padding-right: 6px;
                         border-right: 1px solid #a0a0a0;
+                        padding-left: 6px;
+                        li{
+                            a{
+                                span:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
                     }
                     .hint{
                         position: absolute;
@@ -120,21 +155,34 @@
                             color: #fff;
                         }
                     }
+                    .show{
+                        a{
+                            .gamePhoto{
+                                width: 168px;
+                                height: 93px;
+                                img{
+                                    width: 168px;
+                                    height: 93px; 
+                                }
+                            }
+                        }
+                    }
                     .list2{
                         padding-right: 0px;
                         border-right: 0px solid #a0a0a0;
                         margin-left: 6px;
                     }
                     li{
-                        width: 168px;
+                        width: 164px;
+                        margin-bottom: 6px;
                         position: relative;
                         .gameText{
-                            font:12px/32px "微软雅黑";
+                            font:14px/32px "微软雅黑";
                             color: #201c1c;
-                            text-indent: 24px;
+                            text-indent: 12px;
                             em{
                                 position: absolute;
-                                left: 142px;
+                                right: 18px;
                                 top: 0;
                                 bottom: 0;
                                 margin:auto;
@@ -151,14 +199,16 @@
                                 background: #b01719;
                                 color: #fff;
                             }
+                            span{
+                            }
                         }
                         .gamePhoto{
                             width: 168px;
-                            height: 93px;
+                            height: 60px;
                             position: relative;
                             img{
                                 width: 168px;
-                                height: 93px;
+                                height: 60px;
                             }
                             span{
                                 width: 36px;
@@ -209,6 +259,9 @@
             text-align: left;
             font:8px/18px "微软雅黑";
             color: #9a9a9a;
+            a{
+                color: #319cef;
+            }
         }
     }
 }

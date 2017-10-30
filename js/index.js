@@ -52,26 +52,26 @@ $(function(){
 			
 			//职业介绍中的职业切换
 			//初始状态
-			$(".purple").css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+			$(".purple").css({"background":"url(images/sec_hzzi1_15.png) no-repeat center"});
 			$(".career li").on("click",function(){
 				k = $(this).index();
 				//重置每个按钮的初始状态
-				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
-				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
-				$(".purple").css({"background":"url(images/sec_huizhangzi_41.png) no-repeat center"});
-				$(".orange").css({"background":"url(images/sec_huizhangcheng_41.png) no-repeat center"});
+				$(".green").css({"background":"url(images/sec_hzlv_15.png) no-repeat center"});
+				$(".red").css({"background":"url(images/sec_hzhong_15.png) no-repeat center"});
+				$(".purple").css({"background":"url(images/sec_hzzi_15.png) no-repeat center"});
+				$(".orange").css({"background":"url(images/sec_hzcheng_15.png) no-repeat center"});
 				var i = $(this).index();
 				//每个按钮对应点击之后的状态
 				switch (i){
-					case 2:$(this).css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					case 2:$(this).css({"background":"url(images/sec_hzlv1_15.png) no-repeat center"});
 						break;
-					case 1:$(this).css({"background":"url(images/sec_huizhanghong1_41.png) no-repeat center"});
+					case 1:$(this).css({"background":"url(images/sec_hzhong1_15.png) no-repeat center"});
 					break;
-					case 0:$(this).css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+					case 0:$(this).css({"background":"url(images/sec_hzzi1_15.png) no-repeat center"});
 					break;
-					case 3:$(this).css({"background":"url(images/sec_huizhangcheng1_41.png) no-repeat center"});
+					case 3:$(this).css({"background":"url(images/sec_hzcheng1_15.png) no-repeat center"});
 					break;
-					default:$(this).css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					default:$(this).css({"background":"url(images/sec_hzlv1_15.png) no-repeat center"});
 						break;
 				}
 				$(".xq .per").eq(i).show().siblings().hide();
@@ -80,27 +80,27 @@ $(function(){
 			$(".btnNext").on("click",function(){
 				k++;
 				//重置每个按钮初始状态
-				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
-				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
-				$(".purple").css({"background":"url(images/sec_huizhangzi_41.png) no-repeat center"});
-				$(".orange").css({"background":"url(images/sec_huizhangcheng_41.png) no-repeat center"});
+				$(".green").css({"background":"url(images/sec_hzlv_15.png) no-repeat center"});
+				$(".red").css({"background":"url(images/sec_hzhong_15.png) no-repeat center"});
+				$(".purple").css({"background":"url(images/sec_hzzi_15.png) no-repeat center"});
+				$(".orange").css({"background":"url(images/sec_hzcheng_15.png) no-repeat center"});
 				
 				if(k == 1){
 					//四个小按钮的切换
-					$(".red").css({"background":"url(images/sec_huizhanghong1_41.png) center center no-repeat"});
+					$(".red").css({"background":"url(images/sec_hzhong1_15.png) center center no-repeat"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}else if(k == 2){
-					$(".green").css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					$(".green").css({"background":"url(images/sec_hzlv1_15.png) no-repeat center"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}else if(k == 3){
-					$(".orange").css({"background":"url(images/sec_huizhangcheng1_41.png) no-repeat center"});
+					$(".orange").css({"background":"url(images/sec_hzcheng1_15.png) no-repeat center"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}else{
 					k = 0;
-					$(".purple").css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+					$(".purple").css({"background":"url(images/sec_hzzi1_15.png) no-repeat center"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}
@@ -108,27 +108,27 @@ $(function(){
 			$(".btnPrev").on("click",function(){
 				k--;
 				//重置每个按钮初始状态
-				$(".green").css({"background":"url(images/sec_huizhanglv_41.png) no-repeat center"});
-				$(".red").css({"background":"url(images/sec_huizhanghong_41.png) no-repeat center"});
-				$(".purple").css({"background":"url(images/sec_huizhangzi_41.png) no-repeat center"});
-				$(".orange").css({"background":"url(images/sec_huizhangcheng_41.png) no-repeat center"});
+				$(".green").css({"background":"url(images/sec_hzlv_15.png) no-repeat center"});
+				$(".red").css({"background":"url(images/sec_hzhong_15.png) no-repeat center"});
+				$(".purple").css({"background":"url(images/sec_hzzi_15.png) no-repeat center"});
+				$(".orange").css({"background":"url(images/sec_hzcheng_15.png) no-repeat center"});
 				if(k == 1){
 					//四个小按钮的切换
-					$(".red").css({"background":"url(images/sec_huizhanghong1_41.png) center center no-repeat"});
+					$(".red").css({"background":"url(images/sec_hzhong1_15.png) center center no-repeat"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}else if(k == 2){
-					$(".green").css({"background":"url(images/sec_huizhanglv1_41.png) no-repeat center"});
+					$(".green").css({"background":"url(images/sec_hzlv1_15.png) no-repeat center"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}else if(k == 0){
-					$(".purple").css({"background":"url(images/sec_huizhangzi1_41.png) no-repeat center"});
+					$(".purple").css({"background":"url(images/sec_hzzi1_15.png) no-repeat center"});
 					
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}else{
 					k = 3;
-					$(".orange").css({"background":"url(images/sec_huizhangcheng1_41.png) no-repeat center"});
+					$(".orange").css({"background":"url(images/sec_hzcheng1_15.png) no-repeat center"});
 					//职业的切换
 					$(".xq .per").eq(k).show().siblings().hide();
 				}
