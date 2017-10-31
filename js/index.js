@@ -44,7 +44,7 @@ $(function(){
 				$(this).find(".code").stop().fadeOut();
 			});
 			//新闻攻略中的导航栏切换
-			$(".newsNav ul li a").on("click",function(){
+			$(".newsNav ul li a").hover(function(){
 				var i = $(this).parent().index();
 				$(this).addClass("on").parent().siblings().find("a").removeClass("on");
 				$(".newsR .info .per").eq(i).show().siblings().hide();
@@ -152,12 +152,31 @@ $(function(){
 		},
 		swiper:function(){
 			var swiper = new Swiper('.bans', {
-		        pagination: '.pagination',
+		        pagination: '.banner',
 		        paginationClickable: true,
 		        spaceBetween: 30,
 		        loop:true,
 		        autoplay: 3000,
 		        autoplayDisableOnInteraction : true		        
+		    });
+		    var swipers = new Swiper('.charac', {
+		    	pagination: '.characPage',
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        loop:true,
+		        grabCursor : true,
+		        autoplay: 300000,
+		        autoplayDisableOnInteraction : true,	 
+		        prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',	
+		       	effect : 'coverflow',
+		       	tdFlow: {
+			        rotate : 30,
+			        stretch :800,
+			        depth: 50,
+			        modifier : 1,
+			        shadows : false
+		      	}    
 		    });
 		    $(".bans").mouseenter(function(){
 		    	swiper.stopAutoplay();

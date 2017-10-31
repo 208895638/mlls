@@ -122,7 +122,7 @@ body,html{
                     .ios{
                         background: url(../images/banner_appdown_03.png) no-repeat center;
                         background-size:cover ;
-                        margin-bottom:0px;
+                        margin-bottom:6px;
                     }
                 }
             }
@@ -233,24 +233,23 @@ body,html{
                 width: 426px;
                 .newsNav{
                     height: 33px;
-                    padding-bottom: 19px;
-                    background: url(../images/fir_hengtiao_18.png) no-repeat center bottom;
+                    border-bottom: 2px solid #70615a;
+                    margin-left: 20px;
                     ul{
+                        
                         li{
                             a{
                                 display: block;
-                                color: #9c9a95;
+                                color: #dfd2c9;
                                 font: 15px/33px "微软雅黑";
                                 padding:0 18px;
-                                margin: 0 4px;
+                                border-bottom: 2px solid transparent;
                             }
                             a:hover{
-                                background: url(../images/fir_kuang_14.png) no-repeat center;
-                                background-size:cover ;
+                                border-bottom: 2px solid #dfd2c9;
                             }
                             .on{
-                                background: url(../images/fir_kuang_14.png) no-repeat center;
-                                background-size:cover ; 
+                                border-bottom: 2px solid #dfd2c9;
                             }
                         }
                     }
@@ -273,14 +272,14 @@ body,html{
                             display: block;
                             padding-left: 28px;
                             font:14px/58px "微软雅黑";
-                            color: #9e923b;
+                            color: #85807f;
                             span{
                                 width: 60px;
                                 text-align: center;
+                                color: #dfd2c9;
                             }  
                             em{
                                 width: 250px;
-                                color: #b1b8bd;
                             }   
                             i{
                                 width: 70px;
@@ -289,6 +288,10 @@ body,html{
                           }
                           a:hover{
                               background: url(../images/fir_guangyun_20.png) no-repeat 15px center;
+                              color: #CDB15C;
+                              em{
+                                  color: #CDB15C;
+                              }
                           }
                       }
                   }  
@@ -394,9 +397,9 @@ body,html{
                 }
                 .role{
                     position: absolute;
-                    right: -250px;
+                    right: 0px;
                     top: 0;
-                    width: 930px;
+//                  width: 930px;
                     height: 992px;
                     img{
                         height: 100%;
@@ -491,6 +494,82 @@ body,html{
                 height: 80px;
                 padding:24px 0;
                 margin:0 auto;
+            }
+        }
+        .gameCharac{
+            width: 100%;
+            height: 765px;
+            margin:0 auto;
+            .charac{
+                width: 100%;
+                height:100% ;
+                .swiper-wrapper{
+                    width: 100%;
+                    height: 100%;
+                    .swiper-slide{
+                        width: 100%;
+                        height: 100%;
+                        a{
+                            img{
+                                width: 547px;
+                                height: 735px;
+                                border: 1px solid #3bb2ad;
+                                margin:0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .pagination{
+                position: absolute;
+                width: 500px;
+                height: 82px;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                text-align: right;
+                padding-right: 3px;
+                z-index: 99;
+                text-align: center;
+                font-size:0 ;
+                vertical-align: middle;
+                span{
+                    width: 82px;
+                    height: 82px;
+                    vertical-align: middle;
+                    margin: 0 15px;
+                    display: inline-block;
+                    cursor: pointer;
+                    background: url(../images/thr_lx_06.png) no-repeat center;
+                }
+                .swiper-active-switch{
+                    background: url(../images/thr_lx1_06.png) no-repeat center;
+                }
+            }
+            p{
+                position: absolute;
+                width: 500px;
+                height: 0px;
+                bottom: 59px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border: 2px solid #115b55;
+                z-index: 98;
+                text-align: center;
+                font-size:0 ;
+                vertical-align: middle;
+                em{
+                    width: 82px;
+                    height: 82px;
+                    vertical-align: middle;
+                    margin: 0 15px;
+                    display: inline-block; 
+                    position: absolute;
+                    top: -41px;
+                    background: rgba(000,000,000,0.9);
+                }
             }
         }
         .games{
@@ -761,6 +840,9 @@ body,html{
                                             position: relative;
                                             overflow: hidden;
                                             margin-bottom: 14px;
+                                        }
+                                        h4:hover{
+                                            color: red;
                                         }
                                         h4::after{
                                             content: "..."; 

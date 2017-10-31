@@ -95,7 +95,7 @@ body, html {
     .mBanner .downloads .infoTop .dWBtn li .ios {
       background: url(../images/banner_appdown_03.png) no-repeat center;
       background-size: cover;
-      margin-bottom: 0px; }
+      margin-bottom: 6px; }
     .mBanner .downloads .infoBot {
       width: 227px;
       height: 28px;
@@ -185,20 +185,18 @@ body, html {
         width: 426px; }
         .strategy .box .container .newsR .newsNav {
           height: 33px;
-          padding-bottom: 19px;
-          background: url(../images/fir_hengtiao_18.png) no-repeat center bottom; }
+          border-bottom: 2px solid #70615a;
+          margin-left: 20px; }
           .strategy .box .container .newsR .newsNav ul li a {
             display: block;
-            color: #9c9a95;
+            color: #dfd2c9;
             font: 15px/33px "微软雅黑";
             padding: 0 18px;
-            margin: 0 4px; }
+            border-bottom: 2px solid transparent; }
           .strategy .box .container .newsR .newsNav ul li a:hover {
-            background: url(../images/fir_kuang_14.png) no-repeat center;
-            background-size: cover; }
+            border-bottom: 2px solid #dfd2c9; }
           .strategy .box .container .newsR .newsNav ul li .on {
-            background: url(../images/fir_kuang_14.png) no-repeat center;
-            background-size: cover; }
+            border-bottom: 2px solid #dfd2c9; }
           .strategy .box .container .newsR .newsNav .more a {
             color: #9c9a95;
             font: 15px/33px "微软雅黑";
@@ -211,18 +209,21 @@ body, html {
             display: block;
             padding-left: 28px;
             font: 14px/58px "微软雅黑";
-            color: #9e923b; }
+            color: #85807f; }
             .strategy .box .container .newsR .info .per li a span {
               width: 60px;
-              text-align: center; }
+              text-align: center;
+              color: #dfd2c9; }
             .strategy .box .container .newsR .info .per li a em {
-              width: 250px;
-              color: #b1b8bd; }
+              width: 250px; }
             .strategy .box .container .newsR .info .per li a i {
               width: 70px;
               text-align: right; }
           .strategy .box .container .newsR .info .per li a:hover {
-            background: url(../images/fir_guangyun_20.png) no-repeat 15px center; }
+            background: url(../images/fir_guangyun_20.png) no-repeat 15px center;
+            color: #CDB15C; }
+            .strategy .box .container .newsR .info .per li a:hover em {
+              color: #CDB15C; }
 
 .introduce {
   width: 100%;
@@ -303,9 +304,8 @@ body, html {
               color: #ffffff; }
         .introduce .box .xq .per .role {
           position: absolute;
-          right: -250px;
+          right: 0px;
           top: 0;
-          width: 930px;
           height: 992px; }
           .introduce .box .xq .per .role img {
             height: 100%; }
@@ -378,6 +378,70 @@ body, html {
         height: 80px;
         padding: 24px 0;
         margin: 0 auto; }
+    .game .box .gameCharac {
+      width: 100%;
+      height: 765px;
+      margin: 0 auto; }
+      .game .box .gameCharac .charac {
+        width: 100%;
+        height: 100%; }
+        .game .box .gameCharac .charac .swiper-wrapper {
+          width: 100%;
+          height: 100%; }
+          .game .box .gameCharac .charac .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 100%; }
+            .game .box .gameCharac .charac .swiper-wrapper .swiper-slide a img {
+              width: 547px;
+              height: 735px;
+              border: 1px solid #3bb2ad;
+              margin: 0 auto; }
+      .game .box .gameCharac .pagination {
+        position: absolute;
+        width: 500px;
+        height: 82px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: right;
+        padding-right: 3px;
+        z-index: 99;
+        text-align: center;
+        font-size: 0;
+        vertical-align: middle; }
+        .game .box .gameCharac .pagination span {
+          width: 82px;
+          height: 82px;
+          vertical-align: middle;
+          margin: 0 15px;
+          display: inline-block;
+          cursor: pointer;
+          background: url(../images/thr_lx_06.png) no-repeat center; }
+        .game .box .gameCharac .pagination .swiper-active-switch {
+          background: url(../images/thr_lx1_06.png) no-repeat center; }
+      .game .box .gameCharac p {
+        position: absolute;
+        width: 500px;
+        height: 0px;
+        bottom: 59px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 2px solid #115b55;
+        z-index: 98;
+        text-align: center;
+        font-size: 0;
+        vertical-align: middle; }
+        .game .box .gameCharac p em {
+          width: 82px;
+          height: 82px;
+          vertical-align: middle;
+          margin: 0 15px;
+          display: inline-block;
+          position: absolute;
+          top: -41px;
+          background: rgba(0, 0, 0, 0.9); }
     .game .box .games {
       width: 920px;
       height: 765px;
@@ -583,6 +647,8 @@ body, html {
                     position: relative;
                     overflow: hidden;
                     margin-bottom: 14px; }
+                  .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlL h4:hover {
+                    color: red; }
                   .newsBan .info .box .infoR .detailInfo .container .news .per .par .zlL h4::after {
                     content: "...";
                     position: absolute;
