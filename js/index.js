@@ -172,7 +172,7 @@ $(function(){
 		       	effect : 'coverflow',
 		       	tdFlow: {
 			        rotate : 30,
-			        stretch :800,
+			        stretch :700,
 			        depth: 50,
 			        modifier : 1,
 			        shadows : false

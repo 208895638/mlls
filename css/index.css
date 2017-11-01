@@ -251,7 +251,9 @@ body, html {
         position: relative; }
         .introduce .box .xq .per .skills {
           width: 366px;
-          height: 1000px; }
+          height: 1000px;
+          position: relative;
+          z-index: 10; }
           .introduce .box .xq .per .skills h3 {
             width: 366px;
             height: 110px;
@@ -306,7 +308,8 @@ body, html {
           position: absolute;
           right: 0px;
           top: 0;
-          height: 992px; }
+          height: 992px;
+          z-index: 9; }
           .introduce .box .xq .per .role img {
             height: 100%; }
     .introduce .box .btns .btn {
@@ -317,7 +320,8 @@ body, html {
       width: 42px;
       height: 84px;
       cursor: pointer;
-      overflow: hidden; }
+      overflow: hidden;
+      z-index: 11; }
       .introduce .box .btns .btn img {
         width: 100%; }
       .introduce .box .btns .btn h3 {
@@ -738,3 +742,37 @@ body, html {
     margin: 0 4px;
     color: #fff;
     font-size: 16px; }
+
+#rocket-to-top {
+  background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+  cursor: default;
+  display: block;
+  height: 250px;
+  margin: -125px 0 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 80%;
+  width: 149px;
+  z-index: 11; }
+  #rocket-to-top div {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 149px; }
+  #rocket-to-top .level-2 {
+    background: url("../images/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+    display: none;
+    height: 250px;
+    opacity: 0;
+    z-index: 1; }
+  #rocket-to-top .level-3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    z-index: 2; }
